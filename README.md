@@ -37,7 +37,8 @@ geoportal/
 ├── js/
 │ └── main.js
 └── data/
-└── hospitais.geojson
+    ├── hospitais.geojson
+    └── prontosocorro.geojson
 ```
 ## 🚀 Como rodar localmente
 

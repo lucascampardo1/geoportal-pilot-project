@@ -28,6 +28,21 @@ function criarPopupHospital(feature, layer) {
     layer.bindPopup(conteudo);
 }
 
+function criarPopupUPA(feature, layer) {
+    const props = feature.properties;
+
+    const conteudo = `
+        <div class="popup-UPAD">
+            <h4>${props.nome}</h4>
+            <p><strong>Endereço:</strong> ${props.endereco}</p>
+            <p><strong>CEP:</strong> ${props.cep}</p>
+            <p><strong>Horário de Funcionamento:</strong> ${props["horario de funcionamento"]}</p>
+        </div>
+    `;
+
+    layer.bindPopup(conteudo);
+}
+
 function criarIconePino(cor) {
     const svgPino = `<svg width="30" height="42" viewBox="0 0 30 42" xmlns="http://www.w3.org/2000/svg">
             <path d="M15 0C6.7 0 0 6.7 0 15c0 11.2 15 27 15 27s15-15.8 15-27C30 6.7 23.3 0 15 0z"
@@ -60,7 +75,9 @@ async function carregarGeoJSON(caminhoDoArquivo){
 
 const CAMADAS_CONFIG = [
     { arquivo: 'data/hospitais.geojson', nome: 'Hospitais', cor: '#00008B',
-        popup: criarPopupHospital, visivelPorPadrao: true }
+        popup: criarPopupHospital, visivelPorPadrao: true },
+    { arquivo: 'data/prontosocorro.geojson', nome: 'Prontos Socorros', cor: '#16DB65',
+        popup: criarPopupUPA, visivelPorPadrao: true }
 ]
 
 function criarCamadas(dados, config) {
