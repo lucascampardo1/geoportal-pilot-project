@@ -1,3 +1,7 @@
 .idea
+<<<<<<< HEAD
 .package-lock.json
 .node_modules
+=======
+data/base.txt
+>>>>>>> a802b34b3739cfbc81271475d000b5c6e9d4e5b0
