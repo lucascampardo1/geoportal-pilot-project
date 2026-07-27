@@ -1,0 +1,38 @@
+@use '../base/variaveis' as *;
+
+.painel-camadas {
+  background: $cor-fundo-painel;
+  padding: $padding-painel;
+  border-radius: $border-radius-painel;
+  box-shadow: $cor-sombra;
+  font-size: $tamanho-fonte;
+  line-height: 1.6;
+
+  h4 {
+    margin: 0 0 8px 0;
+    font-size: $tamanho-fonte;
+  }
+}
+
+.linha-camadas {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+  
+  input[type="checkbox"] {
+    cursor: pointer;
+  }
+  
+  label {
+    cursor: pointer;
+  }
+}
+
+.ponto-cor {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}

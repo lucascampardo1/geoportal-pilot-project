@@ -1,42 +1,7 @@
 {
     "type": "FeatureCollection",
     "features": [
-        {
-            "type": "Feature",
-            "properties": {
-                "nome": "Santa Casa de Misericórdia de Mogi Mirim",
-                "endereco": "Rua Maestro Azevedo, 124 - Centro",
-                "cep": "13800-037"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.9591555, -22.4380709]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "nome": "Hospital 22 de Outubro",
-                "endereco": "Avenida Vinte e Dois de Outubro, 733 - Jardim Santa Helena",
-                "cep": "13806-050"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.9655, -22.4257]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "nome": "Hospital Municipal Dr. Tabajara Ramos",
-                "endereco": "Avenida Padre Jaime, 1500 - Centro, Mogi Guaçu - SP",
-                "cep": "13845-900"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.9388, -22.3857]
-            }
-        },
+
         {
             "type": "Feature",
             "properties": {
@@ -49,30 +14,7 @@
                 "coordinates": [-46.9427, -22.3732]
             }
         },
-        {
-            "type": "Feature",
-            "properties": {
-                "nome": "Hospital São Francisco",
-                "endereco": "Rua Inácio Franco Alves, 561 - Parque Cidade Nova, Mogi Guaçu - SP",
-                "cep": "13845-420"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.9413, -22.3601]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "nome": "Santa Casa de Misericórdia de Itapira",
-                "endereco": "Praça Coronel Souza Ferreira, 32 - Santa Cruz, Itapira - SP",
-                "cep": "13974-347"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.8220, -22.4381]
-            }
-        },
+
         {
             "type": "Feature",
             "properties": {

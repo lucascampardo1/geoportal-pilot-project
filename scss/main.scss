@@ -1,0 +1,44 @@
+@use 'base/variaveis' as *;
+@use 'layouts/legenda';
+@use 'layouts/popup';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  background-color: $cor-fundo-header;
+  color: $cor-texto-header;
+  padding: 0.8rem 1.5rem;
+  position: relative;
+  z-index: 1000;
+}
+
+#map {
+  flex: 1;
+  width: 100%;
+  min-height: 0;
+}
+
+.leaflet-container img {
+  max-width: none !important;
+  max-height: none !important;
+}
+
+.icone-pino {
+  background: transparent;
+  border: none;
+}

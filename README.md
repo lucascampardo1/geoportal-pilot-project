@@ -28,17 +28,25 @@ A ideia é que qualquer pessoa — ou profissional de saúde — consiga visuali
 
 ## 📂 Estrutura do projeto
 ```
-geoportal/
+soromap/
 ├── index.html
-├── css/
-│ ├── style.css
-│ └── legenda.css
-│ └── popup.css
-├── js/
-│ └── main.js
-└── data/
-    ├── hospitais.geojson
-    └── prontosocorro.geojson
+├── src/
+│   ├── scss/
+│   │   ├── base/
+│   │   │   └── _variables.scss
+│   │   ├── layouts/
+│   │   │   └── _legenda.scss
+│   │   │   └── _popup.scss
+│   │   └── main.scss
+│   ├── css/
+│   │   ├── style.css
+│   │   
+│   ├── js/
+│       └── main.js
+├── data/
+│   ├── hospitais.geojson
+│   └── prontosocorro.geojson
+└── README.md
 ```
 ## 🚀 Como rodar localmente
 
@@ -61,7 +69,7 @@ Acesse `http://localhost:8000` no navegador.
 
 ## 🗺️ Fonte dos dados
  
-Os dados de localização e informações das unidades de saúde foram coletados manualmente a partir de fontes públicas (sites oficiais das instituições, IBGE). A disponibilidade de soros é [em construção — descreva aqui a metodologia de coleta quando definir, ex: "atualizada manualmente com base em contato direto com as unidades" ou "baseada em dados públicos da Vigilância Epidemiológica"].
+Os dados de localização e informações das unidades de saúde foram coletados manualmente a partir de fontes públicas (sites oficiais das instituições, IBGE).
 
 ## 🧭 Roadmap
 
