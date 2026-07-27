@@ -61,24 +61,54 @@ function criarIconePino(cor) {
 }
 
 async function carregarGeoJSON(caminhoDoArquivo){
-    try {
-        const resposta = await fetch(caminhoDoArquivo);
-        if (!resposta.ok) {
-            throw new Error(`Arquivo não encontrado: ${caminhoDoArquivo}`);
+    const caminhosTentados = [
+        `data/${caminhoDoArquivo}`,
+        `../data/${caminhoDoArquivo}`
+    ];
+
+    for (const caminho of caminhosTentados) {
+        try {
+            const resposta = await fetch(caminho);
+            if (!resposta.ok) continue;
+            return await resposta.json();
+        } catch (error) {
+            console.warn(`Falha ao tentar carregar "${caminho}"`, error.message);
         }
-        return await resposta.json();
-    } catch (error) {
-        console.error(`Erro ao carregar "${caminhoDoArquivo}"`, error.message);
-        return null;
     }
+
+    console.error(`Erro ao carregar "${caminhoDoArquivo}". Tentativas: ${caminhosTentados.join(', ')}`);
+    return null;
 }
 
 const CAMADAS_CONFIG = [
-    { arquivo: 'data/hospitais.geojson', nome: 'Hospitais', cor: '#00008B',
+    { arquivo: 'hospitais.geojson', nome: 'Hospitais', cor: '#00008B',
         popup: criarPopupHospital, visivelPorPadrao: true },
-    { arquivo: 'data/prontosocorro.geojson', nome: 'Pronto Socorro', cor: '#16DB65',
+    { arquivo: 'prontosocorro.geojson', nome: 'Pronto Socorro', cor: '#16DB65',
         popup: criarPopupUPA, visivelPorPadrao: true }
 ]
+
+function mostrarAvisoCarregamento(mensagem) {
+    const mapaContainer = document.getElementById('map');
+    if (!mapaContainer || document.getElementById('aviso-camadas')) return;
+
+    const aviso = document.createElement('div');
+    aviso.id = 'aviso-camadas';
+    aviso.textContent = mensagem;
+    aviso.style.position = 'absolute';
+    aviso.style.top = '12px';
+    aviso.style.right = '12px';
+    aviso.style.zIndex = '1200';
+    aviso.style.maxWidth = '340px';
+    aviso.style.padding = '10px 12px';
+    aviso.style.borderRadius = '6px';
+    aviso.style.background = '#fff3cd';
+    aviso.style.border = '1px solid #ffe08a';
+    aviso.style.color = '#5c4500';
+    aviso.style.fontSize = '12px';
+    aviso.style.boxShadow = '0 1px 5px rgba(0, 0, 0, 0.2)';
+
+    mapaContainer.appendChild(aviso);
+}
 
 function criarCamadas(dados, config) {
     return L.geoJSON(dados, {
@@ -131,11 +161,15 @@ function criarPainelCamadas(camadasCarregadas) {
 
 async function initMap() {
     const camadasCarregadas = [];
+    const camadasComErro = [];
 
     for (const config of CAMADAS_CONFIG) {
         const dados = await carregarGeoJSON(config.arquivo);
 
-        if (!dados) continue;
+        if (!dados) {
+            camadasComErro.push(config.nome);
+            continue;
+        }
 
         const camada = criarCamadas(dados, config);
         camadasCarregadas.push({ config, camada });
@@ -145,6 +179,12 @@ async function initMap() {
         }
     }
     criarPainelCamadas(camadasCarregadas);
+
+    if (camadasComErro.length > 0) {
+        mostrarAvisoCarregamento(
+            `Não foi possível carregar: ${camadasComErro.join(', ')}. Verifique se a página foi aberta por servidor local e se os caminhos de dados estão corretos.`
+        );
+    }
 }
 
 initMap();
