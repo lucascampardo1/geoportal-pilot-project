@@ -32,7 +32,8 @@ geoportal/
 ├── index.html
 ├── css/
 │ ├── style.css
-│ └── ...
+│ └── legenda.css
+│ └── popup.css
 ├── js/
 │ └── main.js
 └── data/

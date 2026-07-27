@@ -59,7 +59,7 @@ async function carregarGeoJSON(caminhoDoArquivo){
 }
 
 const CAMADAS_CONFIG = [
-    { arquivo: 'data/hospitais.geojson', nome: 'Hospitais', cor: '#942621',
+    { arquivo: 'data/hospitais.geojson', nome: 'Hospitais', cor: '#00008B',
         popup: criarPopupHospital, visivelPorPadrao: true }
 ]
 
@@ -78,7 +78,7 @@ function criarPainelCamadas(camadasCarregadas) {
     painel.onAdd = function () {
         const div = L.DomUtil.create('div', 'painel-camadas');
 
-        div.innerHTML = '<h4>Camadas</h4>';
+        div.innerHTML = '<h4>Legenda</h4>';
 
         camadasCarregadas.forEach(({ config, camada }, indice) => {
             const linha = L.DomUtil.create('div', 'linha-camadas', div);
