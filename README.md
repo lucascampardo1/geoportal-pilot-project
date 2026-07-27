@@ -63,7 +63,7 @@ Os dados de localização e informações das unidades de saúde foram coletados
 
 ## 🧭 Roadmap
 
-- [ ] Definir nome oficial do projeto
+- [x] Definir nome oficial do projeto
 - [ ] Adicionar todas as unidades de saúde da região
 - [ ] Estruturar dados de disponibilidade de soro por unidade
 - [ ] Migrar o projeto para **TypeScript**
@@ -76,7 +76,7 @@ _(em breve)_
 
 ## 👤 Autor
 
-**Lucas** — Estudante de Engenharia da Computação
+**Lucas Campardo** — Estudante de Engenharia da Computação
 
 ## 📄 Licença
 
