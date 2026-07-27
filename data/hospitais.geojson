@@ -26,6 +26,19 @@
                 "type": "Point",
                 "coordinates": [-46.8268, -22.4319]
             }
+        },
+
+        {
+            "type": "Feature",
+            "properties": {
+                "nome": "Santa Casa de Misericórdia Dona Carolina Malheiros",
+                "endereco": "R. Carolina Malheiros, 92 - Vila Conrado, São João da Boa Vista - SP",
+                "cep": "13870-720"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-46.7952, -21.9817]
+            }
         }
     ]
 }
