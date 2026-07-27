@@ -1,0 +1,15 @@
+/* -------- POPUP ------- */
+
+.popup-hospital h4 {
+    margin: 0 0 6px 0;
+}
+
+.popup-hospital p {
+    margin: 2px 0;
+    font-size: 12px;
+}
+
+.icone-pino {
+    background: transparent;
+    display: flex;
+}
