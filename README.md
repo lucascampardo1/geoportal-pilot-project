@@ -1,6 +1,6 @@
-# SoroMap🏥
+# Soromapa🏥
 
-> Geoportal interativo para localização de hospitais e disponibilidade de soros antiofídicos, antiaracnídicos e antiescorpiônicos na região da Baixa Mogiana (Mogi Mirim, Mogi Guaçu, Itapira e Estiva Gerbi), interior do estado de São Paulo.
+> Geoportal interativo para localização de hospitais com disponibilidade de soros antiofídicos, antiaracnídicos e antiescorpiônicos na região de Campinas e São João da Boa Vista, interior do estado de São Paulo.
 
 ## 📍 Sobre o projeto
 
@@ -28,8 +28,13 @@ A ideia é que qualquer pessoa — ou profissional de saúde — consiga visuali
 
 ## 📂 Estrutura do projeto
 ```
-geoportal/
+soromap/
 ├── index.html
+├── html/
+│   ├── sobre.html
+│   ├── soros.html
+│   └── contato.html
+│   └── geoportal.html
 ├── css/
 │ ├── style.css
 │ └── legenda.css
