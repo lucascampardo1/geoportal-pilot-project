@@ -12,6 +12,18 @@
         "type": "Point",
         "coordinates": [-46.9427, -22.3732]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "Hospital Municipal de Itapira",
+        "endereco": "Rua Reverendo Alfredo Guimarães, 111 - São Benedito, Itapira - SP",
+        "cep": "13976-010"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-46.8268, -22.4319]
+      }
     }
   ]
 }
