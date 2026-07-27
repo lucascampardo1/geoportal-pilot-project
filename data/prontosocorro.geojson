@@ -4,27 +4,14 @@
     {
       "type": "Feature",
       "properties": {
-        "nome": "UPA - Mogi Mirim",
-        "endereco": "Rodovia Elzio Mariotoni, 369 - Jardim Alto do Mirante, Mogi Mirim - SP",
-        "cep": "13802-444",
+        "nome": "Pronto Socorro Central de Mogi Mirim",
+        "endereco": "Rua Maestro Azevedo, 124 - Centro, Mogi Mirim - SP",
+        "cep": "13800-037",
         "horario de funcionamento": "24 horas"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-46.9361, -22.4307]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "nome": "PPA Zona Norte - Mogi Guaçu",
-        "endereco": "Rua Antonio Luiz Filho, 620 - Jardim Novo II, Mogi Guaçu - SP",
-        "cep": "13848-114",
-        "horario de funcionamento": "24 horas"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.9274, -22.3437]
+        "coordinates": [-46.9591, -22.4380]
       }
     }
   ]

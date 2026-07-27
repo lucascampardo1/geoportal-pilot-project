@@ -76,7 +76,7 @@ async function carregarGeoJSON(caminhoDoArquivo){
 const CAMADAS_CONFIG = [
     { arquivo: 'data/hospitais.geojson', nome: 'Hospitais', cor: '#00008B',
         popup: criarPopupHospital, visivelPorPadrao: true },
-    { arquivo: 'data/prontosocorro.geojson', nome: 'Prontos Socorros', cor: '#16DB65',
+    { arquivo: 'data/prontosocorro.geojson', nome: 'Pronto Socorro', cor: '#16DB65',
         popup: criarPopupUPA, visivelPorPadrao: true }
 ]
 
