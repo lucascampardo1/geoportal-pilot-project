@@ -1,29 +1,31 @@
 {
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {
-        "nome": "Santa Casa de Misericórdia de Mogi Guaçu",
-        "endereco": "Rua Chico de Paula, 608 - Centro, Mogi Guaçu - SP",
-        "cep": "13840-005"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.9427, -22.3732]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "nome": "Hospital Municipal de Itapira",
-        "endereco": "Rua Reverendo Alfredo Guimarães, 111 - São Benedito, Itapira - SP",
-        "cep": "13976-010"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.8268, -22.4319]
-      }
-    }
-  ]
+    "type": "FeatureCollection",
+    "features": [
+
+        {
+            "type": "Feature",
+            "properties": {
+                "nome": "Santa Casa de Misericórdia de Mogi Guaçu",
+                "endereco": "Rua Chico de Paula, 608 - Centro, Mogi Guaçu - SP",
+                "cep": "13840-005"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-46.9427, -22.3732]
+            }
+        },
+
+        {
+            "type": "Feature",
+            "properties": {
+                "nome": "Hospital Municipal de Itapira",
+                "endereco": "Rua Reverendo Alfredo Guimarães, 111 - São Benedito, Itapira - SP",
+                "cep": "13976-010"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-46.8268, -22.4319]
+            }
+        }
+    ]
 }

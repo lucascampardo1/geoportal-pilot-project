@@ -1,18 +1,15 @@
 {
   "type": "FeatureCollection",
   "features": [
-    {
-      "type": "Feature",
-      "properties": {
-        "nome": "Pronto Socorro Central de Mogi Mirim",
-        "endereco": "Rua Maestro Azevedo, 124 - Centro, Mogi Mirim - SP",
-        "cep": "13800-037",
-        "horario de funcionamento": "24 horas"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.9591, -22.4380]
-      }
-    }
-  ]
-}
+      {
+              "type": "Feature",
+              "properties": {
+                  "nome": "Pronto Socorro Central de Mogi Mirim",
+                  "endereco": "Rua Maestro Azevedo, 124 - Centro",
+                  "cep": "13800-037"
+              },
+              "geometry": {
+                  "type": "Point",
+                  "coordinates": [-46.9591555, -22.4380709]
+              }
+          }

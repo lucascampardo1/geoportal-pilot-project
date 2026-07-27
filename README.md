@@ -1,6 +1,6 @@
-# Soromapa🏥
+# SoroMap🏥
 
-> Geoportal interativo para localização de hospitais com disponibilidade de soros antiofídicos, antiaracnídicos e antiescorpiônicos na região de Campinas e São João da Boa Vista, interior do estado de São Paulo.
+> Geoportal interativo para localização de hospitais e disponibilidade de soros antiofídicos, antiaracnídicos e antiescorpiônicos na região de Campinas e São João da Boa Vista, SP.
 
 ## 📍 Sobre o projeto
 
@@ -30,31 +30,34 @@ A ideia é que qualquer pessoa — ou profissional de saúde — consiga visuali
 ```
 soromap/
 ├── index.html
-├── html/
-│   ├── sobre.html
-│   ├── soros.html
-│   └── contato.html
-│   └── geoportal.html
-├── css/
-│ ├── style.css
-│ └── legenda.css
-│ └── popup.css
-├── js/
-│ └── main.js
-└── data/
-    ├── hospitais.geojson
-    └── prontosocorro.geojson
+├── src/
+│   ├── scss/
+│   │   ├── base/
+│   │   │   └── _variables.scss
+│   │   ├── layouts/
+│   │   │   └── _legenda.scss
+│   │   │   └── _popup.scss
+│   │   └── main.scss
+│   ├── css/
+│   │   ├── style.css
+│   │   
+│   ├── js/
+│       └── main.js
+├── data/
+│   ├── hospitais.geojson
+│   └── prontosocorro.geojson
+└── README.md
 ```
 ## 🚀 Como rodar localmente
 
-Pré-requisitos: Python 3 instalado (ou qualquer servidor HTTP local de sua preferência).
+Pré-requisitos: Python 3 instalado
 
 ```bash
 # Clone o repositório
-git clone [url-do-seu-repositorio]
+git clone https://github.com/lucascampardo1/soromap
 
 # Entre na pasta do projeto
-cd geoportal
+cd soromap
 
 # Suba um servidor local
 python3 -m http.server 8000
@@ -62,11 +65,9 @@ python3 -m http.server 8000
 
 Acesse `http://localhost:8000` no navegador.
 
-> O projeto precisa ser servido por um servidor local (não abrir direto o `index.html` pelo navegador), pois o carregamento dos arquivos GeoJSON via `fetch()` é bloqueado em requisições `file://`.
-
 ## 🗺️ Fonte dos dados
  
-Os dados de localização e informações das unidades de saúde foram coletados manualmente a partir de fontes públicas (sites oficiais das instituições, IBGE). A disponibilidade de soros é [em construção — descreva aqui a metodologia de coleta quando definir, ex: "atualizada manualmente com base em contato direto com as unidades" ou "baseada em dados públicos da Vigilância Epidemiológica"].
+Os dados de localização e informações das unidades de saúde foram coletados manualmente a partir de fontes públicas (sites oficiais das instituições, IBGE).
 
 ## 🧭 Roadmap
 
