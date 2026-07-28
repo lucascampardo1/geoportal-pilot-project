@@ -6,10 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass:build": "sass scss/main.scss css/style.css",
-    "sass:watch": "sass --watch scss/main.scss css/style.css"
+    "sass:watch": "sass --watch scss/main.scss css/style.css",
+    "ts:build": "tsc",
+    "ts:watch": "tsc --watch"
   },
   "private": true,
   "devDependencies": {
-    "sass": "^1.102.0"
+    "@types/leaflet": "^1.9.21",
+    "sass": "^1.102.0",
+    "typescript": "^7.0.2"
   }
 }
