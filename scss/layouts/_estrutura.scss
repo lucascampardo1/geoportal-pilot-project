@@ -1,0 +1,129 @@
+@use '../base/variaveis' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.navbar h1, .coluna-texto h2, .tipo-soro h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+  background-color: $cor-primaria;
+  color: #fff;
+  padding: $espaco-sm $espaco-lg;
+  display: flex;
+  align-items: baseline;
+  gap: $espaco-sm;
+  box-shadow: $sombra-media;
+
+  h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+  }
+
+  .navbar-subtitulo {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 300;
+  }
+}
+
+.conteudo {
+  flex: 1;
+  display: flex;
+  min-height: 0;
+}
+
+.coluna-texto {
+  flex: 1;
+  padding: $espaco-lg;
+  overflow-y: auto;
+  background: $cor-fundo-pagina;
+
+  h2 {
+    margin-bottom: $espaco-md;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: $cor-texto-principal;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+}
+
+.tipo-soro {
+  background: $cor-fundo-card;
+  border-radius: 8px;
+  padding: $espaco-md;
+  margin-bottom: $espaco-sm;
+  box-shadow: $sombra-suave;
+  border-left: 4px solid transparent;
+  transition: $transicao-padrao;
+
+  &:hover {
+    transform: translateX(2px);
+    box-shadow: $sombra-media;
+  }
+
+  h3 {
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: $cor-texto-principal;
+  }
+
+  p {
+    font-size: 0.9rem;
+    color: $cor-texto-secundario;
+    line-height: 1.6;
+  }
+
+  &.antiofidico {
+    border-left-color: $cor-antiofidico;
+  }
+
+  &.antiaracnidico {
+    border-left-color: $cor-antiaracnidico;
+  }
+
+  &.antiescorpionico {
+    border-left-color: $cor-antiescorpionico;
+  }
+}
+
+.coluna-mapa {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: $espaco-lg;
+  background: linear-gradient(180deg, #f4f4f8 0%, #ececf2 100%);
+}
+
+.mapa-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: $sombra-media;
+
+  #map {
+    width: 100%;
+    height: 100%;
+  }
+}

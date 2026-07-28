@@ -21,7 +21,7 @@ A ideia é que qualquer pessoa — ou profissional de saúde — consiga visuali
 
 ## 🛠️ Tecnologias utilizadas
 
-- **HTML5 / CSS3 / JavaScript (ES6+)**
+- **HTML5 / SCSS / TypeScript**
 - **[Leaflet.js](https://leafletjs.com/)** — biblioteca de mapas interativos
 - **GeoJSON** — formato de dados geoespaciais
 - **OpenStreetMap** — provedor de mapa base (tiles)
@@ -30,40 +30,25 @@ A ideia é que qualquer pessoa — ou profissional de saúde — consiga visuali
 ```
 soromap/
 ├── index.html
-├── src/
-│   ├── scss/
-│   │   ├── base/
-│   │   │   └── _variables.scss
-│   │   ├── layouts/
-│   │   │   └── _legenda.scss
-│   │   │   └── _popup.scss
-│   │   └── main.scss
-│   ├── css/
-│   │   ├── style.css
-│   │   
-│   ├── js/
-│       └── main.js
+├── scss/
+│   ├── base/
+│   │   └── _variaveis.scss
+│   ├── layouts/
+│   │   └── _legenda.scss
+│   │   └── _popup.scss
+│   │   └── _estrutura.scss
+│   └── main.scss
+├── css/
+│   └── style.css
+├── js/
+│   └── main.js
 ├── data/
 │   ├── hospitais.geojson
 │   └── prontosocorro.geojson
+├── ts/
+│   └── main.ts
 └── README.md
 ```
-## 🚀 Como rodar localmente
-
-Pré-requisitos: Python 3 instalado
-
-```bash
-# Clone o repositório
-git clone https://github.com/lucascampardo1/soromap
-
-# Entre na pasta do projeto
-cd soromap
-
-# Suba um servidor local
-python3 -m http.server 8000
-```
-
-Acesse `http://localhost:8000` no navegador.
 
 ## 🗺️ Fonte dos dados
  
@@ -74,7 +59,7 @@ Os dados de localização e informações das unidades de saúde foram coletados
 - [x] Definir nome oficial do projeto
 - [ ] Adicionar todas as unidades de saúde da região
 - [ ] Estruturar dados de disponibilidade de soro por unidade
-- [ ] Migrar o projeto para **TypeScript**
+- [x] Migrar o projeto para **TypeScript**
 - [ ] Adicionar filtro por tipo de soro disponível
 - [ ] Ferramenta de medição de distância até a unidade mais próxima
 
