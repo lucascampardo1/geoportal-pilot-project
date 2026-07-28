@@ -1,4 +1,4 @@
-# SoroMap🏥
+# Soromapa🏥
 
 > Geoportal interativo para localização de hospitais e disponibilidade de soros antiofídicos, antiaracnídicos e antiescorpiônicos na região de Campinas e São João da Boa Vista, SP.
 
