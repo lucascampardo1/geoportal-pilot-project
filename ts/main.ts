@@ -203,3 +203,7 @@ async function initMap(): Promise<void> {
 }
 
 initMap();
+
+window.addEventListener('load', () => {
+    map.invalidateSize();
+});

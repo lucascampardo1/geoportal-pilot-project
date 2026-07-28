@@ -6,23 +6,46 @@
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 
 </head>
 <body>
 
-<header>
+<nav class="navbar">
     <h1>Soromapa</h1>
-    <p>Geoportal interativo para localização de hospitais e disponibilidade de soros antiofídicos, antiaracnídicos e antiescorpiônicos</p>
-</header>
-
-<nav>
-    <tr>
-        <td><a href="index.html">Início</a></td>
-        <td><a href="#">Sobre</a></td>
-        <td><a href="#">Tipos de soros</a></td>
-        <td><a href="html/geoportal.html">Geoportal</a></td>
-    </tr>
+    <span class="navbar-subtitulo">Região de Campinas e São João da Boa Vista</span>
 </nav>
+
+<main class="conteudo">
+    <section class="coluna-texto">
+        <h2>Tipos de soro</h2>
+
+        <article class="tipo-soro antiofidico">
+            <h3>Soro Antiofídico</h3>
+            <p>Trata-se de um soro que contém anticorpos contra a toxina de cobras peçonhentas.</p>
+        </article>
+
+        <article class="tipo-soro antiaracnidico">
+            <h3>Soro Antiaracnídico</h3>
+            <p>Trata-se de um soro que contém anticorpos contra a toxina de aranhas peçonhentas.</p>
+        </article>
+
+        <article class="tipo-soro antiescorpionico">
+            <h3>Soro Antiescorpiônico</h3>
+            <p>Trata-se de um soro que contém anticorpos contra a toxina de escorpiões peçonhentas.</p>
+        </article>
+    </section>
+
+    <section class="coluna-mapa">
+        <div class="mapa-wrapper" id="mapa-wrapper">
+            <div id="map"></div>
+        </div>
+    </section>
+</main>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>

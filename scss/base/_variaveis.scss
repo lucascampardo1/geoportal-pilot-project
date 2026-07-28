@@ -1,6 +1,5 @@
 // Cores
 $cor-fundo-painel: #fff;
-$cor-sombra: rgba(0, 0, 0, 0.4);
 $cor-texto-header: #fff;
 $cor-fundo-header: #1a1a2e;
 
@@ -10,3 +9,26 @@ $border-radius-painel: 6px;
 
 // Fontes
 $tamanho-fonte: 12px;
+$fonte-principal: "Montserrat", sans-serif;
+
+$cor-primaria: #1a1a2e;
+$cor-primaria-suave: #2d2d4a;
+$cor-fundo-pagina: #fafafa;
+$cor-fundo-card: #ffffff;
+$cor-texto-principal: #1f1f2e;
+$cor-texto-secundario: #6b6b80;
+$cor-borda-suave: #e8e8f0;
+
+$cor-antiofidico: #2d7d46;
+$cor-antiaracnidico: #b8452e;
+$cor-antiescorpionico: #c98a1f;
+
+$sombra-suave: 0 2px 8px rgba(0, 0, 0, 0.06);
+$sombra-media: 0 4px 16px rgba(0, 0, 0, 0.1);
+
+$espaco-xs: 8px;
+$espaco-sm: 12px;
+$espaco-md: 20px;
+$espaco-lg: 32px;
+
+$transicao-padrao: all 0.25s ease;

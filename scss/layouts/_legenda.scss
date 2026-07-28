@@ -2,15 +2,18 @@
 
 .painel-camadas {
   background: $cor-fundo-painel;
-  padding: $padding-painel;
-  border-radius: $border-radius-painel;
-  box-shadow: $cor-sombra;
-  font-size: $tamanho-fonte;
+  backdrop-filter: blur(4px);
+  padding: $espaco-sm $espaco-md;
+  border-radius: 8px;
+  box-shadow: $sombra-media;
+  font-size: 12px;
   line-height: 1.6;
 
   h4 {
-    margin: 0 0 8px 0;
-    font-size: $tamanho-fonte;
+    margin: 0 0 $espaco-xs 0;
+    font-size: 12px;
+    font-weight: 600;
+    color: $cor-texto-principal;
   }
 }
 
@@ -22,10 +25,12 @@
   
   input[type="checkbox"] {
     cursor: pointer;
+    accent-color: $cor-primaria;
   }
   
   label {
     cursor: pointer;
+    color: $cor-texto-principal;
   }
 }
 

@@ -30,22 +30,23 @@ A ideia é que qualquer pessoa — ou profissional de saúde — consiga visuali
 ```
 soromap/
 ├── index.html
-├── src/
-│   ├── scss/
-│   │   ├── base/
-│   │   │   └── _variables.scss
-│   │   ├── layouts/
-│   │   │   └── _legenda.scss
-│   │   │   └── _popup.scss
-│   │   └── main.scss
-│   ├── css/
-│   │   ├── style.css
-│   │   
-│   ├── js/
-│       └── main.js
+├── scss/
+│   ├── base/
+│   │   └── _variaveis.scss
+│   ├── layouts/
+│   │   └── _legenda.scss
+│   │   └── _popup.scss
+│   │   └── _estrutura.scss
+│   └── main.scss
+├── css/
+│   └── style.css
+├── js/
+│   └── main.js
 ├── data/
 │   ├── hospitais.geojson
 │   └── prontosocorro.geojson
+├── ts/
+│   └── main.ts
 └── README.md
 ```
 
