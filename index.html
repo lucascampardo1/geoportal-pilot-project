@@ -2,13 +2,15 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soromapa</title>
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -23,21 +25,30 @@
 
         <article class="tipo-soro antiofidico">
             <h3>Soro Antiofídico</h3>
-            <p>Trata-se de um soro que contém anticorpos contra a toxina de cobras peçonhentas.</p>
+            <p>Trata-se de um soro heterólogo hiperimune usado no tratamento de picadas de cobras peçonhentas (como jararaca, cascavel e surucucu). Foi o primeiro soro antiveneno desenvolvido no Brasil, criado no início do século XX pelo médico e sanitarista Vital Brazil, que descobriu a especificidade do soro antiofídico nessa época.</p>
+            <p><br>Para mais informações, acesse: <a href="https://butantan.gov.br/noticias/onde-eu-consigo-o-soro-para-picada-de-animais-peconhentos-antivenenos-produzidos-pelo-butantan-sao-distribuidos-pelo-sus" target="_blank" rel="noopener noreferrer" class="fonte-link">Instituto Butantan
+            </a></p>
+
         </article>
 
         <article class="tipo-soro antiaracnidico">
             <h3>Soro Antiaracnídico</h3>
-            <p>Trata-se de um soro que contém anticorpos contra a toxina de aranhas peçonhentas.</p>
+            <p>Indicado para picadas de aranhas de importância médica no Brasil — principalmente a armadeira e a aranha-marrom. Segundo a nomenclatura oficial usada pelos órgãos de saúde, o SAAr (soro antiaracnídeo e antiescorpiônico) é indicado para acidentes por aranha armadeira, aranha-marrom e escorpiões, sendo por vezes utilizado também em picadas de escorpião, dependendo da disponibilidade regional.</p>
+            <p><br>Para mais informações, acesse: <a href="https://butantan.gov.br/assets/arquivos/soros-e-vacinas/2024/Bula%20Profissional%20da%20Sa%C3%BAde%20Soro%20Antiaracn%C3%ADdico.pdf" target="_blank" rel="noopener noreferrer" class="fonte-link">Instituto Butantan
+            </a> </p>
         </article>
 
         <article class="tipo-soro antiescorpionico">
             <h3>Soro Antiescorpiônico</h3>
-            <p>Trata-se de um soro que contém anticorpos contra a toxina de escorpiões peçonhentas.</p>
+            <p>Destinado ao tratamento de picadas de escorpião, especialmente relevante para crianças e idosos devido ao maior risco de complicações. No Brasil, todos os escorpiões de importância médica pertencem ao gênero Tityus, ocorrendo em torno de 8.000 acidentes por ano, sendo a espécie Tityus serrulatus (escorpião-amarelo) responsável pelos casos mais graves. É importante notar que, na ausência do soro antiescorpiônico, o soro antiaracnídico — que também neutraliza venenos de escorpiões do gênero Tityus — pode ser utilizado nas mesmas doses preconizadas, o que explica por que algumas unidades de saúde priorizam estocar um ou outro soro.</p>
+            <p><br>Para mais informações, acesse: <a href="https://butantan.gov.br/assets/arquivos/soros-e-vacinas/2024/Bula%20Profissional%20da%20Sa%C3%BAde%20Soro%20Antiescorpi%C3%B4nico.pdf" target="_blank" rel="noopener noreferrer" class="fonte-link">Instituto Butantan
+            </a></p>
+
         </article>
     </section>
 
     <section class="coluna-mapa">
+        <h2>Locais que possuem soros</h2>
         <div class="mapa-wrapper" id="mapa-wrapper">
             <div id="map"></div>
         </div>

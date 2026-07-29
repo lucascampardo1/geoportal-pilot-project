@@ -7,18 +7,14 @@
 }
 
 html, body {
-  height: 100%;
+  height: auto;
+  min-height: 100%;
 }
 
 body {
   font-family: 'Inter', sans-serif;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-}
-
-.navbar h1, .coluna-texto h2, .tipo-soro h3 {
-  font-family: 'Montserrat', sans-serif;
 }
 
 .navbar {
@@ -34,6 +30,7 @@ body {
     font-size: 1.3rem;
     font-weight: 600;
     letter-spacing: 0.3px;
+    font-family: 'Montserrat', sans-serif;
   }
 
   .navbar-subtitulo {
@@ -46,13 +43,12 @@ body {
 .conteudo {
   flex: 1;
   display: flex;
-  min-height: 0;
+  align-items: flex-start;
 }
 
 .coluna-texto {
   flex: 1;
   padding: $espaco-lg;
-  overflow-y: auto;
   background: $cor-fundo-pagina;
 
   h2 {
@@ -62,6 +58,7 @@ body {
     color: $cor-texto-principal;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    font-family: 'Montserrat', sans-serif;
   }
 }
 
@@ -84,12 +81,13 @@ body {
     font-size: 0.95rem;
     font-weight: 600;
     color: $cor-texto-principal;
+    font-family: 'Montserrat', sans-serif;
   }
 
   p {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     color: $cor-texto-secundario;
-    line-height: 1.6;
+    line-height: 1.5;
   }
 
   &.antiofidico {
@@ -108,17 +106,30 @@ body {
 .coluna-mapa {
   flex: 1;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
   padding: $espaco-lg;
   background: linear-gradient(180deg, #f4f4f8 0%, #ececf2 100%);
+  position: sticky;
+  top: 0;
+  height: 100vh;
+
+  h2 {
+    margin-bottom: $espaco-md;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: $cor-texto-principal;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-family: 'Montserrat', sans-serif;
+  }
 }
 
 .mapa-wrapper {
   position: relative;
   width: 100%;
-  height: 100%;
-  border-radius: 10px;
+  flex: 1;
+  border-radius: 12px;
   overflow: hidden;
   box-shadow: $sombra-media;
 
