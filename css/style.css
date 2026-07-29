@@ -57,18 +57,14 @@
 }
 
 html, body {
-  height: 100%;
+  height: auto;
+  min-height: 100%;
 }
 
 body {
   font-family: "Inter", sans-serif;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-}
-
-.navbar h1, .coluna-texto h2, .tipo-soro h3 {
-  font-family: "Montserrat", sans-serif;
 }
 
 .navbar {
@@ -84,6 +80,7 @@ body {
   font-size: 1.3rem;
   font-weight: 600;
   letter-spacing: 0.3px;
+  font-family: "Montserrat", sans-serif;
 }
 .navbar .navbar-subtitulo {
   font-size: 0.8rem;
@@ -94,13 +91,12 @@ body {
 .conteudo {
   flex: 1;
   display: flex;
-  min-height: 0;
+  align-items: flex-start;
 }
 
 .coluna-texto {
   flex: 1;
   padding: 32px;
-  overflow-y: auto;
   background: #fafafa;
 }
 .coluna-texto h2 {
@@ -110,6 +106,7 @@ body {
   color: #1f1f2e;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .tipo-soro {
@@ -130,11 +127,12 @@ body {
   font-size: 0.95rem;
   font-weight: 600;
   color: #1f1f2e;
+  font-family: "Montserrat", sans-serif;
 }
 .tipo-soro p {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   color: #6b6b80;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 .tipo-soro.antiofidico {
   border-left-color: #2d7d46;
@@ -149,17 +147,29 @@ body {
 .coluna-mapa {
   flex: 1;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
   padding: 32px;
   background: linear-gradient(180deg, #f4f4f8 0%, #ececf2 100%);
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+.coluna-mapa h2 {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1f1f2e;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .mapa-wrapper {
   position: relative;
   width: 100%;
-  height: 100%;
-  border-radius: 10px;
+  flex: 1;
+  border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
