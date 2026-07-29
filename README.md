@@ -6,8 +6,6 @@
 
 Este projeto nasceu como um estudo prático de geoprocessamento web e evoluiu para uma ferramenta de utilidade pública: mapear unidades de saúde da região e centralizar informações sobre a disponibilidade de soros contra picadas e mordidas de animais peçonhentos (aranhas, escorpiões e cobras).
 
-A ideia é que qualquer pessoa — ou profissional de saúde — consiga visualizar rapidamente qual unidade hospitalar mais próxima possui o soro necessário em estoque, otimizando o tempo de resposta em situações de emergência.
-
 ⚠️ **Aviso importante:** este é um projeto de estudo e portfólio. As informações de disponibilidade de soro exibidas aqui **não substituem contato direto com a unidade de saúde ou serviços de emergência (SAMU 192)**. Sempre confirme a disponibilidade por telefone antes de se deslocar.
 
 ## ✨ Funcionalidades
@@ -52,7 +50,7 @@ soromap/
 
 ## 🗺️ Fonte dos dados
  
-Os dados de localização e informações das unidades de saúde foram coletados manualmente a partir de fontes públicas (sites oficiais das instituições, IBGE).
+Os dados de localização e informações das unidades de saúde foram coletados manualmente a partir de fontes públicas como Instituto Butantan e SES-SP.
 
 ## 🧭 Roadmap
 
@@ -72,5 +70,6 @@ _(em breve)_
 **Lucas Campardo** — Estudante de Engenharia da Computação
 
 ## 📄 Licença
+
 
 MIT License © 2026 Lucas Campardo.
